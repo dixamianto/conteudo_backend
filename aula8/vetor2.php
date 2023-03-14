@@ -35,8 +35,8 @@ echo "<p>&nbsp</p> <pre>";
 //imprimir todos os valores de um vetor 
 //utilizand foreach
 foreach($alunos as $key => $value){ //$key e $value pode ter qualquer nome ("tipo o i de for")
-    printf( "%27s \n", "+---------------+ ");
-    printf( "%9s| %13s |\n", $key, $value);
+    printf( "%23s \n", "+-----------+ ");
+    printf( "%9s| %9s |\n", $key, $value);
 }
 
 ?>
