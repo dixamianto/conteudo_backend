@@ -48,11 +48,15 @@
     for($i= 0; $i<count($variavel); $i++){
         echo $variavel[$i] . "<br>";
 
-
         //vetor de notas
         $notas = array(5,6,8);
         //como calcular a média de notas do vetor?
         $media = 0;
+        for ($i=0; $i < 3; $i++){
+            $media += $notas[$i];
+        }
+        $media = $media/3;
+
         //imprimir a média
         echo $media;
     }
