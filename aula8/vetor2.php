@@ -37,7 +37,7 @@ echo "<p>&nbsp</p> <pre>";
 foreach($alunos as $key => $value){ //$key e $value pode ter qualquer nome ("tipo o i de for")
     printf( "%23s \n", "+-----------+ ");
     printf( "%9s| %9s |\n", $key, $value);
-}
+}   printf( "%23s \n", "+-----------+ ");
 
 ?>
 </pre>
