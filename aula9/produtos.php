@@ -5,7 +5,7 @@
         "preco"=>2500
     ];
     $produto2=[
-        "nome"=>"notebook",
+        "nome"=>"Notebook",
         "marca"=>"Dell",
         "preco"=>7500
     ];
