@@ -1,6 +1,7 @@
 <?php
     require_once "consultar_por_id.php";
     require_once "../template/cabecalho.php";
+    require_once "../template/menu_restrito.php";
 ?>
 
 <div class="container">
@@ -18,7 +19,7 @@
         <textarea class="form-control" name="materia"><?php echo $noticia->materia ?? "";?></textarea><br>
 
         <label class="form-label">Categoria</label><br>
-        <input class="form-control" type="password" name="categoria" value="<?php echo $noticia->categoria ?? "" ;?>"><br>
+        <input class="form-control" type="text" name="categoria" value="<?php echo $noticia->categoria ?? "" ;?>"><br>
 
         <label class="form-label">Foto</label><br>
         <input class="form-control" type="file" name="foto"><br><br>
