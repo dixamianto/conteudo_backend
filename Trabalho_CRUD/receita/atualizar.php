@@ -10,7 +10,7 @@
    $tempopreparo = $_POST['tempopreparo']
 
    //cria uma variável com um comando SQL
-   $SQL = "UPDATE `receita` SET `nome`= ?, `ingredientes`= ?, `modopreparo`= ?, `tempopreparo` WHERE  `idreceitas`= ? ;";
+   $SQL = "UPDATE `receita` SET `nome`= ?, `ingredientes`= ?, `modopreparo`= ?, `tempopreparo`=? WHERE  `idreceitas`= ? ;";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
