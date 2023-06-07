@@ -1,4 +1,4 @@
-<?php require "../noticia/consultar_categorias.php"; ?>
+<?php require "../receita/consultar_categorias.php"; ?>
 
 <!-- Menu principal -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -11,24 +11,24 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
 
-      <?php foreach($categorias as $noticia): ?>
+      <?php foreach($tempos as $receita): ?>
        
           <li class="nav-item">
             <a class="nav-link" 
-               href="index.php?assunto=<?php echo $noticia->categoria; ?>">
-               <?php echo $noticia->categoria; ?>
+               href="index.php?tempopreparo=<?php echo $receita->tempopreparo; ?>">
+               <?php echo $receita->tempopreparo; ?>
             </a>
           </li>
 
       <?php endforeach; ?>
-      
+      <!-- Acho que não precisa disso -->
       <li class="nav-item">
         <a class="nav-link" 
-            href="../noticia/index.php">
+            href="../receita/index.php">
             Acesso Restrito
         </a>
       </li>
-        
+      <!-- _____________ -->
         
       </ul>
       <form class="d-flex" role="search">
