@@ -1,12 +1,12 @@
 <?php
-   require_once "../login/controlar_acesso.php";
+   //require_once "../login/controlar_acesso.php";
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
    $id = $_GET['id'];
 
    //cria uma variável com um comando SQL
-   $SQL = "DELETE FROM `noticia` WHERE  `idnoticia`= ? ;";
+   $SQL = "DELETE FROM `receita` WHERE  `idreceita`= ? ;";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
