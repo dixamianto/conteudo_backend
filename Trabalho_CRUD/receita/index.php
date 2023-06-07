@@ -16,25 +16,27 @@
     <table class="table" id="tabela_dados">
     <thead>
         <tr>
-            <th scope="col">Título</th>
-            <th scope="col">Categoria</th>
-            <th scope="col">Foto</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Ingredientes</th>
+            <th scope="col">Modo de Preparo</th>
+            <th scolpe="col">Tempo de Preparo</th>
             <th scope="col">Ações</th>
         </tr>
     </thead>
     <tbody>
-        <?php foreach($noticias as $noticia): ?>
+        <?php foreach($receitas as $receita): ?>
         <tr>
-            <td><?= $noticia -> titulo ?></td>
-            <td><?= $noticia -> categoria ?></td>
-            <td><img src="../uploads/<?= $noticia->foto ?>" height="30px"></td>
+            <td><?= $receita -> nome ?></td>
+            <td><?= $receita -> Ingredientes ?></td>
+            <td><?= $receita -> modopreparo ?></td>
+            <td><?= $receita -> tempopreparo ?></td>
             <td class="text_end" width="25%">
-              <a href="excluir.php?id=<?= $noticia -> idnoticia ?>" class="btn btn-danger"> 
+              <a href="excluir.php?id=<?= $receita -> idreceita ?>" class="btn btn-danger"> 
                 <i class="fa-solid fa-trash-can"></i> 
                 Excluir
               </a>
 
-                <a href="formulario.php?id=<?= $noticia -> idnoticia ?>" class="btn btn-primary"> 
+                <a href="formulario.php?id=<?= $receita -> idreceita ?>" class="btn btn-primary"> 
                 <i class="fa-solid fa-pen-to-square"></i> 
                 Atualizar
               </a>
