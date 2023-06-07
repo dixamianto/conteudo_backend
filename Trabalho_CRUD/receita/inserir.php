@@ -1,29 +1,30 @@
 <?php
-   require_once "../login/controlar_acesso.php";
+   //require_once "../login/controlar_acesso.php";
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
    var_dump ($_POST);
 
-   // Verifica se o nome, login e senha foram enviados do formulario de cadastro
-   if(isset($_POST['titulo']) && isset($_POST['materia']) && isset($_POST['categoria'])){
+   // Verifica se o nome, ingredientes, modo de preparo e tempo de preparo foram enviados do formulario de cadastro
+   if(isset($_POST['nome']) && isset($_POST['ingredientes']) && isset($_POST['modopreparo']) && isset($_POST['tempopreparo'])){
 
-      //verifica se o nome, login e senha foram enviado
+      //verifica se o nome, ingredientes, modo de preparo e tempo de preparo foram enviado
       //do formulario de cadastro
       require_once "faz_upload.php";
-      $titulo = $_POST['titulo'];
-      $materia = $_POST['materia'];
-      $categoria = $_POST['categoria'];
-      $foto = $nome_foto;
+      $nome = $_POST['nome'];
+      $ingredientes = $_POST['ingredientes'];
+      $modopreparo = $_POST['modopreparo'];
+      $tempopreparo = $_POST['tempopreparo'];
+      //$foto = $nome_foto;
 
       //cria uma variável com um comando SQL
-      $SQL = "INSERT INTO `noticia` (`titulo`, `materia`, `categoria`, foto) VALUES (?, ?, ?, ?);";
+      $SQL = "INSERT INTO `receita` (`nome`, `ingredientes`, `modopreparo`, `tempopreparo`) VALUES (?, ?, ?, ?);";
    
       //prepara o comando para ser executado no mysql
       $comando = $conexao->prepare($SQL);
 
       //faz a vinculação dos parâmetros ?, ?, ?
-      $comando->bind_param("ssss", $titulo, $materia, $categoria, $foto);
+      $comando->bind_param("sssi", $nome, $ingredientes, $modopreparo, $tempopreparo);
 
       //executa o comando
       $comando->execute();
