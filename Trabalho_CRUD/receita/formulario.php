@@ -1,29 +1,32 @@
 <?php
-    require_once "../login/controlar_acesso.php";
+    //require_once "../login/controlar_acesso.php";
     require_once "consultar_por_id.php";
     require_once "../template/cabecalho.php";
     require_once "../template/menu_restrito.php";
 ?>
 
 <div class="container">
-    <h1>Cadastro de Notícias</h1>
+    <h1>Cadastro de Receitas</h1>
     <hr>
 
-    <form action="<?php echo isset($noticia) ? "atualizar.php" : "inserir.php";?>" method="post" enctype="multipart/form-data">
+    <form action="<?php echo isset($receita) ? "atualizar.php" : "inserir.php";?>" method="post" enctype="multipart/form-data">
 
-        <input type="hidden" name="idnoticia" value="<?php echo $noticia->idnoticia ?? "" ;?>"><br>
+        <input type="hidden" name="idreceita" value="<?php echo $receita->idreceita ?? "" ;?>"><br>
 
-        <label class="form-label">Título</label><br>
-        <input class="form-control" type="text" name="titulo" value="<?php echo $noticia->titulo ?? "" ;?>"><br>
+        <label class="form-label">Nome</label><br>
+        <input class="form-control" type="text" name="nome" value="<?php echo $receita->nome ?? "" ;?>"><br>
 
-        <label class="form-label">Matéria</label><br>
-        <textarea class="form-control" name="materia"><?php echo $noticia->materia ?? "";?></textarea><br>
+        <label class="form-label">Ingredientes</label><br>
+        <textarea class="form-control" name="ingredientes"><?php echo $receita->ingredientes ?? "";?></textarea><br>
+        
+        <label class="form-label">Modo de Preparo</label><br>
+        <textarea class="form-control" name="modopreparo"><?php echo $receita->modopreparo ?? "";?></textarea><br>
 
-        <label class="form-label">Categoria</label><br>
-        <input class="form-control" type="text" name="categoria" value="<?php echo $noticia->categoria ?? "" ;?>"><br>
+        <label class="form-label">Tempo Preparo</label><br>
+        <input class="form-control" type="text" name="tempopreparo" value="<?php echo $receita->tempopreparo ?? "" ;?>"><br>
 
-        <label class="form-label">Foto</label><br>
-        <input class="form-control" type="file" name="foto"><br><br>
+        <!--label class="form-label">Foto</label><br>
+        <input class="form-control" type="file" name="foto"><br><br-->
 
         <button class="btn- btn-dark" type="submit">Inserir</button>
         
