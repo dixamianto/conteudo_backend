@@ -2,20 +2,20 @@
    
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
-
+//verificar o que vai ser usado como uma busca geral
    //cria uma variável com um comando SQL
-   $SQL = "SELECT * FROM noticia where categoria like ?";
+   $SQL = "SELECT * FROM receita where tempopreparo like ?";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
 
    //pega o valor assunto via GET pela URL
    //ou um valor em branco
-   $assunto = $_GET['assunto'] ?? "";
-   $assunto = "%$assunto%";
+   $tempopreparo = $_GET['tempopreparo'] ?? "";
+   $tempopreparo = "%$tempopreparo%";
 
-   //vincula a variavel $assunto com o param ? no SQL 
-   $comando->bind_param("s", $assunto);
+   //vincula a variavel $tempopreparo com o param ? no SQL 
+   $comando->bind_param("i", $tempopreparo);
 
    //executa o comando
    $comando->execute();
@@ -24,9 +24,9 @@
    $resultados = $comando->get_result();
 
    //pega todas linha de resultado da consulta
-   $noticias = [];
-   while ($noticia = $resultados->fetch_object()){
-      $noticias[] = $noticia;
+   $receitas = [];
+   while ($receita = $resultados->fetch_object()){
+      $receitas[] = $receita;
    }
    
 
