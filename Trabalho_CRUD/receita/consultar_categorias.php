@@ -4,7 +4,7 @@
    require_once "../banco/conexao.php";
 
    //cria uma variável com um comando SQL
-   $SQL = "SELECT distinct tempopreparo FROM receita";
+   $SQL = "SELECT distinct nome FROM receita";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
@@ -16,9 +16,9 @@
    $resultados = $comando->get_result();
 
    //pega todas linha de resultado da consulta
-   $tempos = [];
-   while ($tempo = $resultados->fetch_object()){
-      $tempos[] = $tempo;
+   $nomes = [];
+   while ($nome = $resultados->fetch_object()){
+      $nomes[] = $nome;
    }
 
    

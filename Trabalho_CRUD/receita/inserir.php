@@ -10,7 +10,7 @@
 
       //verifica se o nome, ingredientes, modo de preparo e tempo de preparo foram enviado
       //do formulario de cadastro
-      require_once "faz_upload.php";
+      //require_once "faz_upload.php";
       $nome = $_POST['nome'];
       $ingredientes = $_POST['ingredientes'];
       $modopreparo = $_POST['modopreparo'];

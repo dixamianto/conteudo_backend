@@ -1,7 +1,10 @@
 <hr>
     <!-- Rodapé-->
     <footer class="bg-dark p-3 text-white text-center">
-          Meu site de receitas @ 2023
+          Meu site de receitas <br>
+          Copyright &copy; 2023 - by Iara Ribeiro <br>
+          <a href="https://www.instagram.com/iara.ribeiro.252325/" target="_blank">Instagram</a> | 
+          <a href="https://www.linkedin.com/in/iara-ribeiro-886475278" target="_blank">LinkedIn</a>
     </footer>
     <!-- final Rodapé-->
 

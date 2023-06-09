@@ -15,7 +15,7 @@
    $comando = $conexao->prepare($SQL);
 
    //faz a vinculação dos parâmetros ?, ?, ?
-   $comando->bind_param("sssi", $titulo, $materia, $categoria, $id);
+   $comando->bind_param("sssi", $titulo, $materia, $categoria, $idnoticia);
 
    //executa o comando
    $comando->execute();

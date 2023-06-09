@@ -1,12 +1,13 @@
 <?php 
     //require_once "../login/controlar_acesso.php";
-    //require "consultar_todos.php"; 
-    require_once "../template/cabecalho.php";
+    require "consultar_todos.php";
     require_once "../template/menu_restrito.php";
+    require_once "../template/cabecalho.php";
+    //require_once "../template/menu.php";
 ?>
 
     <div class="container">
-    <h1>Notícias</h1> 
+    <h1>Receitas</h1> 
     <hr>
   <div class="text-end">
     <a href="formulario.php" class="btn btn-success">
@@ -27,9 +28,9 @@
         <?php foreach($receitas as $receita): ?>
         <tr>
             <td><?= $receita -> nome ?></td>
-            <td><?= $receita -> Ingredientes ?></td>
+            <td><?= $receita -> ingredientes ?></td>
             <td><?= $receita -> modopreparo ?></td>
-            <td><?= $receita -> tempopreparo ?></td>
+            <td><?= $receita -> tempopreparo ?> min</td>
             <td class="text_end" width="25%">
               <a href="excluir.php?id=<?= $receita -> idreceita ?>" class="btn btn-danger"> 
                 <i class="fa-solid fa-trash-can"></i> 

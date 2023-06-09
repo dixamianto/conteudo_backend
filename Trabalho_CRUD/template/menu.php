@@ -10,26 +10,29 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
+      <li class="nav-item">
+            <a class="nav-link" 
+               href="../site/index.php">
+               Site
+            </a>
+          </li>
 
-      <?php foreach($tempos as $receita): ?>
+      <li class="nav-item">
+        <a class="nav-link" 
+            href="../receita/index.php">
+            Controle de Receitas
+        </a>
+      </li>
+      <?php foreach($nomes as $receita): ?>
        
           <li class="nav-item">
             <a class="nav-link" 
-               href="index.php?tempopreparo=<?php echo $receita->tempopreparo; ?>">
-               <?php echo $receita->tempopreparo; ?>
+               href="index.php?nome=<?php echo $receita->nome; ?>">
+               <?php echo $receita->nome; ?>
             </a>
           </li>
 
       <?php endforeach; ?>
-      <!-- Acho que não precisa disso -->
-      <li class="nav-item">
-        <a class="nav-link" 
-            href="../receita/index.php">
-            Acesso Restrito
-        </a>
-      </li>
-      <!-- _____________ -->
-        
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

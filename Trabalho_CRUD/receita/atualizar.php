@@ -3,20 +3,20 @@
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
-   $idreceitas = $_POST['idreceitas'];
+   $idreceita = $_POST['idreceita'];
    $nome = $_POST['nome'];
    $ingredientes = $_POST['ingredientes'];
    $modopreparo = $_POST['modopreparo'];
-   $tempopreparo = $_POST['tempopreparo']
+   $tempopreparo = $_POST['tempopreparo'];
 
    //cria uma variável com um comando SQL
-   $SQL = "UPDATE `receita` SET `nome`= ?, `ingredientes`= ?, `modopreparo`= ?, `tempopreparo`= ? WHERE  `idreceitas`= ? ;";
+   $SQL = "UPDATE `receita` SET `nome`= ?, `ingredientes`= ?, `modopreparo`= ?, `tempopreparo`= ? WHERE  `idreceita`= ? ;";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
 
-   //faz a vinculação dos parâmetros ?, ?, ?
-   $comando->bind_param("sssii", $nome, $ingredientes, $modopreparo, $tempopreparo, $id);
+   //faz a vinculação dos parâmetros ?, ?, ?, ?, ?
+   $comando->bind_param("sssii", $nome, $ingredientes, $modopreparo, $tempopreparo, $idreceita);
 
    //executa o comando
    $comando->execute();

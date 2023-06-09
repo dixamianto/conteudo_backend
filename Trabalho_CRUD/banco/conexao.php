@@ -3,7 +3,7 @@
 $host = "127.0.0.1";
 $user = "root";
 $password = "";
-$database = "trabalho_IaraRibeiro";
+$database = "trabalho_iararibeiro";
 $port = 3306;
 
 //cria uma conexão com o mysql

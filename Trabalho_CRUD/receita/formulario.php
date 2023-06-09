@@ -23,7 +23,7 @@
         <textarea class="form-control" name="modopreparo"><?php echo $receita->modopreparo ?? "";?></textarea><br>
 
         <label class="form-label">Tempo Preparo</label><br>
-        <input class="form-control" type="text" name="tempopreparo" value="<?php echo $receita->tempopreparo ?? "" ;?>"><br>
+        <input class="form-control" type="text" name="tempopreparo" placeholder="Tempo em Minutos" value="<?php echo $receita->tempopreparo ?? "" ;?>"><br>
 
         <!--label class="form-label">Foto</label><br>
         <input class="form-control" type="file" name="foto"><br><br-->
