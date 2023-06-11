@@ -1,11 +1,16 @@
 <?php
     //require_once "../login/controlar_acesso.php";
     require_once "consultar_por_id.php";
+    require_once "../template/menu.php";
     require_once "../template/cabecalho.php";
-    require_once "../template/menu_restrito.php";
 ?>
 
 <div class="container">
+    <div class="">
+    <a href="index.php" class="btn btn-danger">
+        Cancelar
+    </a>
+    </div>
     <h1>Cadastro de Receitas</h1>
     <hr>
 

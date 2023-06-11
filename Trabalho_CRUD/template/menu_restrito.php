@@ -1,4 +1,7 @@
-<?php require "../receita/consultar_categorias.php"; ?>
+<?php 
+  require "../receita/consultar_categorias.php"; 
+  //require "../receita/pesquisar.php";
+?>
 <!-- Menu principal -->
 <nav class="navbar fixed-top bg-body-tertiary">
   <div class="container-fluid">
@@ -19,7 +22,7 @@
     <ul class="dropdown-menu">
       <?php foreach($nomes as $receita): ?>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="index.php?nome=<?php echo $receita->nome; ?>">
+          <a class="nav-link" href="index.php?assunto=<?php echo $receita->nome; ?>">
               <?php echo $receita->nome; ?>
           </a>
         </li>
@@ -30,7 +33,7 @@
   </li>
 </ul>
 <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <input class="form-control me-2" type="search" name="pesquisa" placeholder="Pesquisar" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Pesquisar</button>
       </form>
 </nav>
@@ -38,3 +41,9 @@
 </nav>
 <br><br>
 <!-- Final do Menu -->
+
+
+  
+
+
+

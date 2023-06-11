@@ -11,7 +11,7 @@
   <body>
     <br><br>
 <header>
-  <!-- Caroussel -->
+  <!-- Caroussel >
   <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -20,7 +20,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../imagem/img1.jpg" class="d-block w-100" alt="...">
+      <img src="../imagem/img4.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="../imagem/img2.jpg" class="d-block w-100" alt="...">
@@ -38,6 +38,37 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-    <!-- Final do Caroussel -->
+    < Final do Caroussel -->
 </header>
 <hr>
+<input class="DocSearch-Input" 
+      aria-autocomplete="both" 
+      aria-labelledby="docsearch-label" 
+      id="docsearch-input" 
+      autocomplete="off" 
+      autocorrect="off" 
+      autocapitalize="off" 
+      enterkeyhint="go" 
+      spellcheck="false" 
+      autofocus="true" 
+      placeholder="Search docs" 
+      maxlength="64" 
+      type="search" 
+      aria-activedescendant="docsearch-item-0" 
+      aria-controls="docsearch-list"
+    >
+
+    <input class="DocSearch-Input" 
+      aria-autocomplete="both" 
+      aria-labelledby="docsearch-label" 
+      id="docsearch-input" 
+      autocomplete="off" 
+      autocorrect="off" 
+      autocapitalize="off" 
+      enterkeyhint="search" 
+      spellcheck="false" 
+      autofocus="true" 
+      placeholder="Search docs" 
+      maxlength="64" 
+      type="search"
+    >

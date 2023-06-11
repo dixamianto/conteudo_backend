@@ -1,45 +1,19 @@
-<?php require "../receita/consultar_categorias.php"; ?>
-
 <!-- Menu principal -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar fixed-top bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Menu</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-      <li class="nav-item">
-            <a class="nav-link" 
-               href="../site/index.php">
-               Site
-            </a>
-          </li>
-
-      <li class="nav-item">
-        <a class="nav-link" 
-            href="../receita/index.php">
-            Controle de Receitas
-        </a>
-      </li>
-      <?php foreach($nomes as $receita): ?>
-       
-          <li class="nav-item">
-            <a class="nav-link" 
-               href="index.php?nome=<?php echo $receita->nome; ?>">
-               <?php echo $receita->nome; ?>
-            </a>
-          </li>
-
-      <?php endforeach; ?>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
+    <a class="navbar-brand" href="#">Trabalho de Back-End</a>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+    
+<ul class="nav justify-content-end nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="../site/index.php">Site</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="../receita/index.php">Controle de Receitas</a>
+  </li>
+</nav>
+</div>
 </nav>
 <hr>
 <!-- Final do Menu -->

@@ -27,7 +27,7 @@
    $receita = $resultados->fetch_object();
 
    //imprimir o resultado
-   //var_dump($usuario);
+   //var_dump($receita);
    
 }
    
