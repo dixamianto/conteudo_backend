@@ -41,7 +41,7 @@
     < Final do Caroussel -->
 </header>
 <hr>
-<input class="DocSearch-Input" 
+<!--input class="DocSearch-Input" 
       aria-autocomplete="both" 
       aria-labelledby="docsearch-label" 
       id="docsearch-input" 
@@ -71,4 +71,4 @@
       placeholder="Search docs" 
       maxlength="64" 
       type="search"
-    >
+-->

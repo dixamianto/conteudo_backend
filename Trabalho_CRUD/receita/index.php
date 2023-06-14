@@ -21,6 +21,8 @@
             <th scope="col">Ingredientes</th>
             <th scope="col">Modo de Preparo</th>
             <th scolpe="col">Tempo de Preparo</th>
+            <th scoope="col">Categoria</th>
+            <th scope="col">foto</th>
             <th scope="col">Ações</th>
         </tr>
     </thead>
@@ -31,13 +33,15 @@
             <td><?= $receita -> ingredientes ?></td>
             <td><?= $receita -> modopreparo ?></td>
             <td><?= $receita -> tempopreparo ?> min</td>
+            <td><?= $receita -> categoria ?></td>
+            <td><img src="../uploads/<?= $receita->foto ?>" height="30px"></td>
             <td class="text_end" width="25%">
               <a href="excluir.php?id=<?= $receita -> idreceita ?>" class="btn btn-danger"> 
                 <i class="fa-solid fa-trash-can"></i> 
                 Excluir
               </a>
 
-                <a href="formulario.php?id=<?= $receita -> idreceita ?>" class="btn btn-primary"> 
+              <a href="formulario.php?id=<?= $receita -> idreceita ?>" class="btn btn-primary"> 
                 <i class="fa-solid fa-pen-to-square"></i> 
                 Atualizar
               </a>

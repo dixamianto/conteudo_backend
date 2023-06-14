@@ -30,8 +30,11 @@
         <label class="form-label">Tempo Preparo</label><br>
         <input class="form-control" type="text" name="tempopreparo" placeholder="Tempo em Minutos" value="<?php echo $receita->tempopreparo ?? "" ;?>"><br>
 
-        <!--label class="form-label">Foto</label><br>
-        <input class="form-control" type="file" name="foto"><br><br-->
+        <label class="form-label">Categoria</label><br>
+        <input class="form-control" type="text" name="categoria" value="<?php echo $receita->categoria ?? "" ;?>"><br>
+
+        <label class="form-label">Foto</label><br>
+        <input class="form-control" type="file" name="foto"><br><br>
 
         <button class="btn- btn-dark" type="submit">Inserir</button>
         

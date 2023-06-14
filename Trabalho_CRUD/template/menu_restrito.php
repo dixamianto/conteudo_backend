@@ -20,10 +20,10 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
     <ul class="dropdown-menu">
-      <?php foreach($nomes as $receita): ?>
+      <?php foreach($categorias as $receita): ?>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="index.php?assunto=<?php echo $receita->nome; ?>">
-              <?php echo $receita->nome; ?>
+          <a class="nav-link" href="index.php?assunto=<?php echo $receita->categoria; ?>">
+              <?php echo $receita->categoria; ?>
           </a>
         </li>
       <?php endforeach; ?>

@@ -3,7 +3,6 @@
     include_once "../template/cabecalho.php";
     //include_once "../template/menu.php";
     include_once "../receita/consultar_por_id.php";
-    //require "../receita/ingredientes.php";
 ?>
 
 <div class="container">
@@ -12,18 +11,35 @@
    <img src="../uploads/<?php echo $receita->foto; ?>"  />
    <p><strong>Tempo de preparo:</strong> <?php echo $receita->tempopreparo; ?> Min</p>
 <!--p>
-   <ul>
-   <?php //foreach($ingredientes as $ingrediente): ?>
-        <li>
-            <?php //echo $ingrediente->ingredientes; ?>
-       </li>
-   <?php //endforeach; ?>
-   </ul>
+   
    </p-->
     <h5><strong>Ingredientes</strong></h5>
-   <p><?php echo $receita->ingredientes; ?></p>
+   <p><?php 
+   $itens = explode(";", $receita->ingredientes); 
+   
+   ?>
+   <ul>
+   <?php foreach($itens as $i): ?>
+        <li>
+            <?php echo $i; ?>
+       </li>
+   <?php endforeach; ?>
+   </ul>
+</p>
+
    <h5><strong>Modo de Preparo</strong></h5>
-   <p><?php echo $receita->modopreparo; ?></p>
+   <p><?php 
+   
+   $preparo = explode(";", $receita->modopreparo); 
+   ?>
+   <ol>
+   <?php foreach($preparo as $j): ?>
+        <li>
+            <?php echo $j; ?>
+       </li>
+   <?php endforeach; ?>
+   </ol>
+   </p>
 </div>
 
 <?php  include_once "../template/rodape.php" ?>
