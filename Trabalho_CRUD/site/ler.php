@@ -8,7 +8,7 @@
 <div class="container">
    <h1><?php echo $receita->nome; ?></h1>
    <hr>
-   <img src="../uploads/<?php echo $receita->foto; ?>"  />
+   <img height="50%" width="50%" src="../uploads/<?php echo $receita->foto; ?>"  />
    <p><strong>Tempo de preparo:</strong> <?php echo $receita->tempopreparo; ?> Min</p>
 <!--p>
    
