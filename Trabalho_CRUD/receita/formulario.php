@@ -1,7 +1,6 @@
 <?php
-    //require_once "../login/controlar_acesso.php";
     require_once "consultar_por_id.php";
-    require_once "../template/menu.php";
+    require_once "../template/menu_unico.php";
     require_once "../template/cabecalho.php";
 ?>
 
@@ -36,7 +35,7 @@
         <label class="form-label">Foto</label><br>
         <input class="form-control" type="file" name="foto"><br><br>
 
-        <button class="btn- btn-dark" type="submit">Inserir</button>
+        <button class="btn btn-dark" type="submit">Inserir</button>
         
     </form>
     </div>

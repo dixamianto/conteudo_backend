@@ -1,8 +1,7 @@
 <?php 
     include_once "../receita/consultar_todos.php";
-    include_once "../template/menu_restrito.php";
+    include_once "../template/menu.php";
     include_once "../template/cabecalho.php";
-    //include_once "../template/menu.php";
 ?>
 
 

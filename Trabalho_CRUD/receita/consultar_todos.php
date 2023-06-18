@@ -2,7 +2,7 @@
    
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
-//verificar o que vai ser usado como uma busca geral
+
    //cria uma variável com um comando SQL
    $SQL = "SELECT * FROM receita where categoria like ?";
  

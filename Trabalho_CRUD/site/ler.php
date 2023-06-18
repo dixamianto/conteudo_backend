@@ -1,7 +1,6 @@
 <?php  
-    include_once "../template/menu_restrito.php";
+    include_once "../template/menu.php";
     include_once "../template/cabecalho.php";
-    //include_once "../template/menu.php";
     include_once "../receita/consultar_por_id.php";
 ?>
 
@@ -10,9 +9,7 @@
    <hr>
    <img height="50%" width="50%" src="../uploads/<?php echo $receita->foto; ?>"  />
    <p><strong>Tempo de preparo:</strong> <?php echo $receita->tempopreparo; ?> Min</p>
-<!--p>
-   
-   </p-->
+
     <h5><strong>Ingredientes</strong></h5>
    <p><?php 
    $itens = explode(";", $receita->ingredientes); 

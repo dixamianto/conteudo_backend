@@ -1,4 +1,4 @@
-<hr>
+<br>
     <!-- Rodapé-->
     <footer class="bg-dark p-3 text-white text-center">
           Meu site de receitas <br>
