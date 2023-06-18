@@ -18,9 +18,6 @@
     <thead>
         <tr>
             <th scope="col">Nome</th>
-            <th scope="col">Ingredientes</th>
-            <th scope="col">Modo de Preparo</th>
-            <th scolpe="col">Tempo de Preparo</th>
             <th scoope="col">Categoria</th>
             <th scope="col">foto</th>
             <th scope="col">Ações</th>
@@ -30,9 +27,6 @@
         <?php foreach($receitas as $receita): ?>
         <tr>
             <td><?= $receita -> nome ?></td>
-            <td><?= $receita -> ingredientes ?></td>
-            <td><?= $receita -> modopreparo ?></td>
-            <td><?= $receita -> tempopreparo ?> min</td>
             <td><?= $receita -> categoria ?></td>
             <td><img src="../uploads/<?= $receita->foto ?>" height="30px"></td>
             <td class="text_end" width="25%">

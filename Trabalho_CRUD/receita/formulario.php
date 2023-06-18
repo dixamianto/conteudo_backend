@@ -9,7 +9,7 @@
     <div class="">
     <a href="index.php" class="btn btn-danger">
         Cancelar
-    </a>
+    </a><br><br>
     </div>
     <h1>Cadastro de Receitas</h1>
     <hr>
