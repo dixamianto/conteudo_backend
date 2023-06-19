@@ -25,9 +25,6 @@
 
    //pega a primeira linha de resultado da consulta
    $receita = $resultados->fetch_object();
-
-   //imprimir o resultado
-   //var_dump($receita);
    
 }
    
