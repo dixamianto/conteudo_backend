@@ -13,7 +13,7 @@
     <?php foreach($receitas as $id => $receita): ?>
           <div class="col">
             <div class="card">
-                <img src="../uploads/<?php echo $receita->foto; ?>" class="card-img-top" alt="...">
+                <img width=300px height=300px src="../uploads/<?php echo $receita->foto; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $receita->nome; ?></h5>                    
                     <a href="ler.php?id=<?php echo $receita->idreceita; ?>" class="btn btn-primary">Ler mais</a>
